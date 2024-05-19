@@ -1,0 +1,205 @@
+body {
+  height: 100%;
+  background-color: #d22b2b;
+  margin-left: auto;
+  background-image: url(https://cdn.glitch.global/6476b0f3-f2d1-4e45-8472-a31dd1e4f8f8/csun_matador_zoom_backgrounds-set1c2.jpg?v=1711490676337);
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-brand {
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  box-shadow: inset 500px 0 0 0 white;
+  color: #d3212f;
+}
+
+.about {
+  background-color: white;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.pgtitle {
+  font-size: 60px;
+  width: 76%;
+  float: right;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.pgtitle1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container .card {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 2rem;
+  background: white;
+  margin: 5px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.container .card .sci {
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container .card:hover .content {
+  transform: translateY(-10px);
+}
+
+.container .card .content .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.container .card .sci button {
+  list-style: none;
+  margin: 0 10px;
+  transform: none;
+  transition: none;
+  opacity: 1;
+}
+
+.container .card .sci button {
+  color: black;
+  font-size: 20px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  background: #d3212f;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container .card {
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1201px) {
+  .container .card {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}

@@ -1,0 +1,145 @@
+.dashboard {
+    height: 100%;
+    background-color: #d22b2b;
+    margin-left: auto;
+    background-image: url(/src/pages/images/csun_matador_zoom_backgrounds-set1c2.jpg);
+  }
+  
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .navbar-brand {
+    box-shadow: inset 0 0 0 0 white;
+    color: white;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .navbar-brand:hover {
+    box-shadow: inset 500px 0 0 0 white;
+    color: #d3212f;
+  }
+  
+  .navbar-image {
+    max-height: 40px;
+  }
+  
+  h5 {
+    color: black;
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  .navbar-custom {
+    background-color: #d3212f;
+    color: white;
+  }
+  
+  #resource-list {
+    min-height: 100vh;
+  }
+  
+  .big-text {
+    font-size: 70px;
+  }
+  
+  .med-text {
+    font-size: 50px;
+  }
+  
+  .med-label {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 25px;
+    border-radius: 60px;
+    background-color: #282a35;
+    color: white;
+  }
+  
+  .grn-btn {
+    background-color: black;
+    color: white;
+  }
+  
+  .grn-btn:hover {
+    background-color: #d22b2b;
+    color: white;
+  }
+  
+  .container-padding {
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+  
+  .card {
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.569);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    font-weight: bold;
+  }
+  
+  .cardH {
+    border-radius: 1em;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    color: white;
+  }
+  
+  .btn-primary {
+    border-radius: 1em;
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  
+  #btn-primary:hover {
+    background-color: #ff0000;
+    color: #ff0000;
+  }
+  
+  .side-bar {
+    background-color: #880808;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 #c6d8cc;
+  }
+  
+  .cardrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }

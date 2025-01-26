@@ -1,5 +1,10 @@
 Welcome to our Senior Design Project!
 
-In this project we create a website that live reports the status of the many Gaming Workstations at the USU's GamesRoom!! A lot of effort and work was put into this by the following:
+This project focuses on creating a dynamic website that live-reports the status of the gaming workstations in the USU's GamesRoom. The site integrates multiple technologies to deliver real-time updates, offering users a seamless and engaging experience.
 
-Kenny Simon, Rita Simon, Michael Peters, and Jordan Mendoza!
+Key Features:
+Frontend: Built with React.js, utilizing CSS, HTML, and JavaScript to create a responsive and visually appealing user interface.
+Backend: Powered by Node.js to handle server-side functionality and manage data flow.
+Data Integration: Uses the GGLeap API to retrieve real-time information about the gaming workstations.
+This project was developed through the collaborative efforts of:
+Kenny Simon, Rita Simon, Michael Peters, and Jordan Mendoza
